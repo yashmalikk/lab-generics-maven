@@ -36,6 +36,9 @@ public class SearchExperiments {
     pen.println("A small string: "
         + SearchUtils.search(strings, SmallObject.PRED));
     pen.println("An odd integer: "
+        + SearchUtils.search(numbers, OddInteger.PRED));
+
+    pen.println("A small integer: " 
         + SearchUtils.search(numbers, SmallObject.PRED));
     
   } // main(String[])
