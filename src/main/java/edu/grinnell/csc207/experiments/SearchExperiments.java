@@ -25,7 +25,7 @@ public class SearchExperiments {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     // Set up a few arrays to search.
-    String[] strings =
+    String[] strings = 
         new String[] {"alpha", "bravo", "charlie", "delta", "echo", "foxtrot",
             "golf", "hotel", "india", "juliett", "kilo", "lima", "mike",
             "november", "oscar"};
@@ -36,7 +36,7 @@ public class SearchExperiments {
     pen.println("A small string: "
         + SearchUtils.search(strings, SmallObject.PRED));
     pen.println("An odd integer: "
-        + SearchUtils.search(numbers, OddInteger.PRED));
+        + SearchUtils.search(numbers, SmallObject.PRED));
     
   } // main(String[])
 
