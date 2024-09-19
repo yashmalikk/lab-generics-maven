@@ -50,8 +50,10 @@ public class SimpleDynamicArray<T> implements DynamicArray<T> {
     // If the array is not big enough, expand it
     if (this.values.length <= i) {
       int newsize = this.values.length * 2;
+      // System.err.println("when newsize = length * 2\n");
       while (newsize <= i) {
         newsize *= 2;
+        // System.err.println("inside while loop\n");
       } // while
       this.values = Arrays.copyOf(this.values, newsize);
     } // if the array is no big enough
@@ -79,4 +81,5 @@ public class SimpleDynamicArray<T> implements DynamicArray<T> {
     // Get the value
     return this.values[i];
   } // get(int)
+
 } // class SimpleDynamicArray<T>
