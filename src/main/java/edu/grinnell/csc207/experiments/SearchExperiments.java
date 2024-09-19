@@ -2,6 +2,7 @@ package edu.grinnell.csc207.experiments;
 
 import edu.grinnell.csc207.util.SearchUtils;
 import edu.grinnell.csc207.util.predicates.OddInteger;
+import edu.grinnell.csc207.util.predicates.SmallObject;
 import edu.grinnell.csc207.util.predicates.SmallString;
 
 import java.io.PrintWriter;
@@ -10,7 +11,7 @@ import java.io.PrintWriter;
  * A simple set of experiments with predicates and searching.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Richard Lin, Yash Malik
  */
 public class SearchExperiments {
   /**
@@ -33,9 +34,10 @@ public class SearchExperiments {
 
     // Okay, we're ready for the experiments
     pen.println("A small string: "
-        + SearchUtils.search(strings, SmallString.PRED));
+        + SearchUtils.search(strings, SmallObject.PRED));
     pen.println("An odd integer: "
         + SearchUtils.search(numbers, OddInteger.PRED));
+    
   } // main(String[])
 
 } // class SearchExperiments
